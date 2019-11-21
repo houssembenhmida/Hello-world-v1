@@ -1,4 +1,4 @@
-FROM tomcat:8
+FROM docker.io/tomcat:8
 RUN rm -Rf /usr/local/tomcat/webapps/*
 COPY target/Hello-world-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
 RUN chgrp -R 0 /usr/local/tomcat/ && \
